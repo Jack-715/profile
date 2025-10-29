@@ -361,43 +361,72 @@ body.dark-mode .project-card .tech-used {
     margin-right: 10px;
 }
 
+
 /* === CONTACT SECTION === */
-.contact-details {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1em;
+#contact {
+    text-align: center; /* Centers all text and inline elements */
+    padding: 80px 20px;
+    background: #f9f9f9;
 }
 
-.contact-details i {
-    color: var(--primary-color);
-    margin-right: 10px;
-}
-
-#contact-form {
-    max-width: 600px;
+/* Optional — if your container limits width */
+#contact .container {
+    max-width: 800px;
     margin: 0 auto;
-    display: grid;
-    gap: 15px;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"],
+/* Title Styling */
+#contact .section-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+/* Center the paragraph under the title */
+#contact p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center; /* ensures paragraphs inside also centered */
+}
+
+/* Contact details styling */
+.contact-details {
+    margin-bottom: 30px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+/* Contact form styling */
+#contact-form input,
 #contact-form textarea {
     width: 100%;
-    padding: 15px;
+    max-width: 500px;
+    margin: 10px auto;
+    display: block;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 6px;
     font-size: 1em;
-    background-color: var(--card-background);
-    color: var(--text-color);
-}
-
-#contact-form textarea {
-    resize: vertical;
 }
 
 #contact-form button {
-    justify-self: start;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 /* === FOOTER === */
@@ -461,6 +490,7 @@ footer {
         right: auto;
     }
 }
+
 
 
 
